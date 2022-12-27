@@ -1,0 +1,136 @@
+* {
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+html {
+
+}
+body {
+    margin: 0;
+    height: 100%;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper {
+    margin-left: 100px;
+    padding: 15% 0 20% 0;
+}
+/* -----MAIN BEGIN---- */
+main {
+    background: url(img/32582886_rrt1.jpg) no-repeat;
+    background-size: cover;
+    
+}
+
+.sidenav {
+    background: #000;
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 17%;
+}
+
+.sidenav .icon{
+    width: 35%;
+    filter: invert(100%);
+    -webkit-filter:invert(100%);
+    padding: 0 8px 20px 16px;
+    display: grid;
+    grid-template-columns: auto;
+    opacity: 0.5;
+}
+.sidenav .icon:hover{
+    opacity: 1;
+}
+
+.home h1 {
+    font-size: 60px;
+    background-image: linear-gradient(to left, #e4b2e6, #9a5ed7);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.button{
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 30px;
+}
+
+.button::after,
+.button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.button::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+/* -------MEIN END------ */
+#about_me {
+    color: #000;
+    background: -webkit-linear-gradient(90deg, #ffffff,#d6d8d8,#9b9b9b,#646464,#1a1a1a);
+    background: linear-gradient(90deg, #ffffff,#d6d8d8,#9b9b9b,#646464,#1a1a1a);
+}
+#about_me h2{
+    text-align: center;
+    font-size: 28px;
+}
